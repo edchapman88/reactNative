@@ -25,6 +25,7 @@ const StartGameScreen = props => {
             setValidInt(confirmedInt);
             setEnteredValue(''); //reset entered value (wont happen until rerender)
             Keyboard.dismiss();
+            props.onValidInt(confirmedInt);
         }
     };
 
